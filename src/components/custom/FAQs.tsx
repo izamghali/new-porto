@@ -9,10 +9,10 @@ export default function FAQs({ className }: { className?: string }) {
             question: 'Do you need to have a computer-science degree to land a coding job at tech companies?',
             answer: <div>
                 <blockquote className="italic" cite="https://www.glassdoor.com/blog/technical-interview-tips/">
-                    "Not really. With a CS degree, a candidate will hopefully already know the core data structures and algorithms. 
+                    &quot;Not really. With a CS degree, a candidate will hopefully already know the core data structures and algorithms. 
                     But that only takes candidates a week or so to learn, so it doesn&apos;t really give those candidates a huge advantage. 
                     <span className="bg-yellow-400 text-black">
-                        The biggest disadvantage that candidates without CS degrees have is just a lack confidence."
+                        The biggest disadvantage that candidates without CS degrees have is just a lack confidence.&quot;
                     </span>
                 </blockquote>
                 <br />
