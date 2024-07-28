@@ -1,11 +1,10 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
+import gsap from "gsap"
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-
-import gsap from "gsap"
 
 let sentence = ['Hello', 'World!', "I'm", 'the', 'developer', 'you', 'need.', 
     'Look', 'at', 'this', 'never', 'ending', 'text!', 'I', 'can', 'type', 'this ', 'all',
