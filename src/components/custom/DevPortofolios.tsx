@@ -4,8 +4,6 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { PiArrowSquareOut, PiGithubLogo, PiLinkedinLogo, PiMagnifyingGlass } from "react-icons/pi"
 import Link from "next/link"
 import Image from "next/image"
-import { Input } from "../ui/input"
-import { Button } from "../ui/button"
 import SearchBar from "./SearchBar"
 
 export default function DevPortofolios({ className }: { className?: string }) {
@@ -31,12 +29,39 @@ export default function DevPortofolios({ className }: { className?: string }) {
         },
         {
             imgUrl: 'https://github.com/shadcn.png',
-            fallback: 'RH',
-            name: 'Rayhan H. Sutrisno',
+            fallback: 'AH',
+            name: 'Arya Hanif Nugroho',
             title: 'Fullstack Developer',
-            href: 'rayhansoe.vercel.app',
-            linkedin: 'https://www.linkedin.com/in/rayhansoe/',
-            github: 'https://github.com/rayhansoe',
+            href: 'https://aryahanif-portfolio.vercel.app/',
+            linkedin: 'https://www.linkedin.com/in/aryahanifn/',
+            github: 'https://github.com/mstrpyyy',
+        },
+        {
+            imgUrl: 'https://github.com/shadcn.png',
+            fallback: 'NS',
+            name: 'Nadirra Shifa Zuhra Shafira',
+            title: 'Fullstack Developer',
+            href: 'https://portofolio-nadirra.vercel.app/',
+            linkedin: 'https://www.linkedin.com/in/nadirra-s-3a36b0118/',
+            github: 'https://github.com/nadirras',
+        },
+        {
+            imgUrl: 'https://github.com/shadcn.png',
+            fallback: 'JS',
+            name: 'Julius Siregar',
+            title: 'Fullstack Developer',
+            href: 'https://portofolio-julius.vercel.app/',
+            linkedin: 'https://www.linkedin.com/in/julius-siregar-164a85213/',
+            github: 'https://github.com/juliussiregar',
+        },
+        {
+            imgUrl: 'https://github.com/shadcn.png',
+            fallback: 'AW',
+            name: 'Amsaldi Wahyu Kristian Sinulingga',
+            title: 'Frontend Developer',
+            href: 'https://amsaldi3.vercel.app',
+            linkedin: 'https://www.linkedin.com/in/amsaldi/',
+            github: 'https://github.com/Altruism23',
         },
     ]
 
@@ -71,8 +96,8 @@ export default function DevPortofolios({ className }: { className?: string }) {
                     { portList && 
                         portList.map((item, idx) => {
                             return <Dialog key={idx}>
-                                <DialogTrigger className="w-full border-[1px] rounded-lg px-2">
-                                    <div key={idx} className="flex items-center justify-between gap-2 py-1 rounded-lg hover:bg-black/5 duration-200 cursor-pointer">
+                                <DialogTrigger className="w-full border-[1px] rounded-lg px-2 group hover:bg-black/5 duration-200">
+                                    <div key={idx} className="flex items-center justify-between gap-2 py-1 rounded-lg duration-200 cursor-pointer">
                                         <div className="flex items-center gap-2 w-full">
                                             <Avatar>
                                                 <AvatarImage src={item.imgUrl} />
