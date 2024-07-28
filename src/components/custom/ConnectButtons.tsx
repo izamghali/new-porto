@@ -1,6 +1,6 @@
 import React from "react"
 import { Button } from "../ui/button"
-import { PiRocket, PiArrowUpRight, PiArrowSquareOut, PiGithubLogo, PiLinkedinLogo, PiEnvelope } from "react-icons/pi"
+import { PiRocket, PiArrowUpRight, PiGithubLogo, PiLinkedinLogo, PiEnvelope } from "react-icons/pi"
 import Link from "next/link"
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "../ui/dialog"
 import Image from "next/image"
@@ -33,8 +33,7 @@ export default function ConnectButtons({ className }: { className?: string }) {
                             </div>
                         </div>
                         <span className="text-black/60">
-                            
-Career switcher aspiring to be a Pi-shaped developer, open to work and collaboration. Process-oriented and committed to continuous learning to stay relevant in tech. Excited for what&apos;s ahead!
+                            Career switcher aspiring to be a Pi-shaped developer, open to work and collaboration. Process-oriented and committed to continuous learning to stay relevant in tech. Excited for what&apos;s ahead!
                         </span>
                         <div className="flex justify-between">
                             <div className="flex gap-4">

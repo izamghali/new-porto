@@ -1,5 +1,4 @@
 import React from "react"
-import Powered from "./Powered"
 
 export default function Content({ className }: { className?: string }) {
     return ( 

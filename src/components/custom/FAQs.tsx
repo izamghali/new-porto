@@ -23,7 +23,7 @@ export default function FAQs({ className }: { className?: string }) {
     ]
 
     return (
-        <div>
+        <div className={`${ className }`}>
             <h2 className="text-left font-bold text-2xl text-white">FAQs</h2>
             <div className="space-y-2">
                 {
