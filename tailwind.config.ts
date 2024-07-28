@@ -16,6 +16,8 @@ const config = {
     },
     extend: {
       colors: {
+        ocean: '#00004B', // Custom ocean blue color with more white
+        'ocean-light': '#a7d8e7', 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

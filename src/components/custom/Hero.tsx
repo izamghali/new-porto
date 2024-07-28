@@ -1,10 +1,4 @@
-import React, { useEffect } from "react"
-// import { greet } from "@/lib/utils";
-import { TypeAnimation } from 'react-type-animation';
-import Content from "./Content";
 import { toast } from "sonner";
-import Track from "../dynamic/Track";
-import gsap from "gsap";
 
 export default function Hero({ className }: { className?: string }) {
 
@@ -50,10 +44,10 @@ export default function Hero({ className }: { className?: string }) {
 
     return (
         <section className={`${ className } `}>
-            <video className="lg:block hidden object-cover h-screen" autoPlay={true} controls={false} muted loop={true} >
+            <video className="lg:block hidden object-cover h-screen w-screen" autoPlay={true} controls={false} muted loop={true} >
                 <source src={videoSources[1]} type="video/webm"/>
             </video>
-            <video className="lg:hidden block object-cover h-screen" autoPlay={true} controls={false} muted loop={true} width={2160} height={3840} >
+            <video className="lg:hidden block object-cover h-screen w-screen" autoPlay={true} controls={false} muted loop={true} width={2160} height={3840} >
                 <source src={'https://videos.pexels.com/video-files/7956444/7956444-uhd_2160_3840_24fps.mp4'} type="video/mp4"/>
             </video>
         </section>
