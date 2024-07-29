@@ -56,7 +56,7 @@ export function ProjectCard({ title, desc, imgUrl, href, tools, tags, year } : P
                 </CardFooter>
             </Card>
             <div className="rounded-lg bg-black/0 lg:group-hover:bg-black w-full h-full absolute top-0 left-0 z-[1] duration-200"></div>
-            <div className={`flex gap-2 justify-center items-center ${ isLoading ? 'opacity-100' : 'opacity-0' } bg-black/70 duration-200  absolute top-0 left-0 w-full h-full z-[2] rounded-lg lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2`}>
+            <div className={`flex gap-2 justify-center items-center ${ isLoading ? 'opacity-100 z-[2]' : 'opacity-0 z-[0]' } bg-black/70 duration-200  absolute top-0 left-0 w-full h-full rounded-lg lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2`}>
                 <Spinner className="z-[3] relative text-white" size={'small'} />
                 <p className="z-[3] relative text-white select-none">Please wait...</p>
             </div>

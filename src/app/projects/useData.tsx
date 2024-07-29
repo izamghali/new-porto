@@ -5,9 +5,9 @@ import Link from "next/link"
 import React from "react"
 import { FaBootstrap, FaReact, FaSass } from "react-icons/fa"
 import { IoLogoFirebase } from "react-icons/io5"
-import { PiFigmaLogo, PiSpotifyLogo } from "react-icons/pi"
+import { PiFigmaLogo, PiMapPin, PiSpotifyLogo } from "react-icons/pi"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiShadcnui, SiGreensock } from "react-icons/si"
+import { SiShadcnui, SiGreensock, SiExcalidraw } from "react-icons/si"
 import { ProjectType } from "@/lib/constant"
 
 const projectInfo: ProjectInfo[] | [] = [
@@ -46,6 +46,16 @@ const projectInfo: ProjectInfo[] | [] = [
                 name: 'Shadcn UI',
                 href: 'https://ui.shadcn.com/',
                 logo: <SiShadcnui size={`1.2rem`} />,
+            },
+            {
+                name: 'Maptiler API',
+                href: 'https://www.maptiler.com/',
+                logo: <PiMapPin size={`1.2rem`} />,
+            },
+            {
+                name: 'Excalidraw',
+                href: 'https://excalidraw.com/',
+                logo: <SiExcalidraw size={`1.2rem`} />,
             },
         ]
         ,
@@ -94,6 +104,10 @@ const projectInfo: ProjectInfo[] | [] = [
                 link: 'https://samiyastudio.com/'
             },
             {
+                name: 'Wireframe in Figma',
+                link: 'https://www.figma.com/proto/wrJu7cv0FUTuUS9M3C33ey/samiya-wireframe?page-id=0%3A1&type=design&node-id=34-100&viewport=294%2C268%2C0.27&t=26KEpD4GwZpEWWug-1&scaling=min-zoom&mode=design'
+            },
+            {
                 name: 'GitHub Repository',
                 link: 'https://github.com/izamghali/samiya-website'
             },
@@ -113,6 +127,11 @@ const projectInfo: ProjectInfo[] | [] = [
                 name: 'GSAP',
                 href: 'https://gsap.com/',
                 logo: <SiGreensock size={`1.2rem`} />,
+            },
+            {
+                name: 'Figma',
+                href: 'https://www.figma.com/',
+                logo: <PiFigmaLogo size={`1.2rem`} />,
             },
         ]
         ,
@@ -205,6 +224,11 @@ const projectInfo: ProjectInfo[] | [] = [
             },
         ],
         tools: [
+            {
+                name: 'Figma',
+                href: 'https://www.figma.com/',
+                logo: <PiFigmaLogo size={`1.2rem`} />,
+            },
             {
                 name: 'Firebase',
                 href: 'https://firebase.google.com/',
