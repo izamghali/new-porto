@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { ProjectInfo, ProjectLink, ProjectMember, ProjectType } from "@/lib/constant"
 import { ToolTip } from "@/components/dynamic/ToolTip"
 import { Badge } from "@/components/ui/badge"
+import { LoadingButton } from "@/components/ui/loading-button"
+import PrevButton from "@/components/dynamic/PrevButton"
 
 export default function Page(params : { params: { slug: string } }) {
 
@@ -23,17 +25,15 @@ export default function Page(params : { params: { slug: string } }) {
                 <Header />
             </div>
             <div className="py-8 px-4 flex flex-col items-center gap-6">
-                <h2 className="font-bold text-2xl lg:text-4xl text-center">{ filtered.title }</h2>
+                <div className="max-sm:flex max-sm:items-start gap-2 max-sm:flex-col relative w-full std-article-max-w">
+                    <PrevButton className="max-sm:static max-sm:m-0 absolute top-0 bottom-0 m-auto left-0 bg-transparent text-black/60 border-black/60 hover:text-black hover:border-black border-[1.9px] hover:bg-transparent" text="Projects" />
+                    <h2 className="font-bold text-2xl lg:text-4xl text-center">{ filtered.title }</h2>
+                </div>
                 <Separator className="bg-black/30 std-article-max-w" />
                 <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center gap-8 lg:gap-0 std-article-max-w w-full">
                     {/* navigation */}
                     <div className="flex flex-col gap-5 lg:gap-10 w-full">
                         <div className="flex lg:flex-col justify-between gap-2">
-                            <Link className="flex items-center gap-2 std-hover group w-fit" href={'/projects'}>
-                                <PiArrowLeft className="group-hover:-translate-x-1 duration-200" />Projects
-                                {/* <Button className="flex gap-2 items-center bg-transparent border-2 border-black/60 text-black/60 hover:bg-transparent hover:text-black">
-                                </Button> */}
-                            </Link>
                             <div className="space-x-2">
                                 <Badge className="w-fit">{ filtered.type != undefined && ProjectType[filtered.type] }</Badge>
                                 <Badge className="w-fit">{ filtered.year && filtered.year }</Badge>
