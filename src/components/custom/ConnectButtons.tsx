@@ -1,17 +1,22 @@
-import React from "react"
+'use client'
+import React, { useState } from "react"
 import { Button } from "../ui/button"
 import { PiRocket, PiArrowUpRight, PiGithubLogo, PiLinkedinLogo, PiEnvelope } from "react-icons/pi"
 import Link from "next/link"
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "../ui/dialog"
 import Image from "next/image"
+import { LoadingButton } from "../ui/loading-button"
 
 export default function ConnectButtons({ className }: { className?: string }) {
+
+    const [ isLoading, setIsLoading ] = useState(false);
+
     return (
         <div className={`flex items-center gap-2 w-full justify-end max-w-96 z-10 ${ className } `}>
-            <Link href={'/projects'}>
-                <Button className="group flex items-center gap-2">
+            <Link href={'/projects'} onClick={() => setIsLoading(true) }>
+                <LoadingButton loading={isLoading} className="group flex items-center gap-2">
                     <PiRocket className="group-hover:-translate-y-1 duration-200" size={`1.1rem`} />Projects
-                </Button>
+                </LoadingButton>
             </Link>
             <Dialog>
                 <DialogTrigger className="group flex items-center gap-2 bg-sky-400 hover:bg-sky-400 text-white py-2 px-4 h-10 text-sm font-medium rounded-md">

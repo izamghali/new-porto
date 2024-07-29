@@ -1,6 +1,4 @@
 'use client'
-import * as React from "react"
-
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -17,12 +15,15 @@ import { PiArrowRight } from "react-icons/pi"
 import { ToolTip } from "../ToolTip"
 import { Badge } from "@/components/ui/badge"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
+import { Spinner } from "@/components/ui/spinner"
 
 export function ProjectCard({ title, desc, imgUrl, href, tools, tags, year } : ProjectInfo) {
+    const [ isLoading, setIsLoading ] = useState(false);
     const router = useRouter()
     return (
-        <div onClick={() => router.push(href) } className="cursor-pointer group rounded-lg relative w-full">
-            <Card className="bg-[#FAF9F6] rounded-lg border-2 border-black/5 max-lg:shadow-md max-xs:w-72 w-80 lg:w-96 max-h-96 z-[2] relative lg:group-hover:bg-white lg:group-hover:border-white lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2 duration-200">
+        <div onClick={() => { setIsLoading(true); router.push(href) } } className="select-none cursor-pointer group rounded-lg relative w-full">
+            <Card className={`${ isLoading ? 'blur-[1px]' : 'blur-none' } bg-[#FAF9F6] rounded-lg border-2 border-black/5 max-lg:shadow-md max-xs:w-72 w-80 lg:w-96 max-h-96 z-[2] relative lg:group-hover:bg-white lg:group-hover:border-white lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2 duration-200`}>
                 <CardHeader>
                     <div className="flex w-full justify-between">
                         <CardTitle className="max-lg:truncate">{ title }</CardTitle>
@@ -35,7 +36,7 @@ export function ProjectCard({ title, desc, imgUrl, href, tools, tags, year } : P
                             <Badge>{ year }</Badge>
                         </div>
                     </div>
-                    <CardDescription className="">{ desc }</CardDescription>
+                    <CardDescription>{ desc }</CardDescription>
                 </CardHeader>
                 <CardContent>
                     {/* <Image src={imgUrl} alt="" /> */}
@@ -55,6 +56,10 @@ export function ProjectCard({ title, desc, imgUrl, href, tools, tags, year } : P
                 </CardFooter>
             </Card>
             <div className="rounded-lg bg-black/0 lg:group-hover:bg-black w-full h-full absolute top-0 left-0 z-[1] duration-200"></div>
+            <div className={`flex gap-2 justify-center items-center ${ isLoading ? 'opacity-100' : 'opacity-0' } bg-black/70 duration-200  absolute top-0 left-0 w-full h-full z-[2] rounded-lg lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2`}>
+                <Spinner className="z-[3] relative text-white" size={'small'} />
+                <p className="z-[3] relative text-white select-none">Please wait...</p>
+            </div>
         </div>
     )
 }
