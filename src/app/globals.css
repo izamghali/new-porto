@@ -75,6 +75,10 @@
         @apply font-bold text-2xl;
     }
 
+    .std-sub-header {
+        @apply font-semibold text-lg text-black/80;
+    }
+
     .std-text {
         @apply text-black/60;
     }
@@ -85,5 +89,9 @@
 
     .std-article-max-w {
         @apply max-w-[50rem];
+    }
+
+    .std-h-article-img {
+        @apply rounded-md h-[20.9rem] w-full object-cover;
     }
 }
