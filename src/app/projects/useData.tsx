@@ -95,9 +95,18 @@ const projectInfo: ProjectInfo[] | [] = [
                 alt={"User Address Management"} 
             />
             <div>
-                <h4 className="std-sub-header">User & Admin Account Management</h4>
+                <h4 className="std-sub-header">Account Management</h4>
                 <p className="std-text">
-                Users are able to register & login using their emails or login using their Google account. Users are also able to make forgot-password request to reset their password.
+                Users & admins are able to edit their profile including change photo profile, username or full name, email address, and update new password. 
+                Users are also able to add, edit, and delete their address, as well as seting main address.
+                WearDrobe provides map to pinpoint the exact location
+                </p>
+            </div>
+            <div>
+                <h4 className="std-sub-header">Address Management</h4>
+                <p className="std-text">
+                Users are able to add, edit, and delete their address, as well as seting the main address.
+                WearDrobe provides map to pinpoint the exact location and to reverse geocoding the coordinate and convert it into human-readable address, adjusting its exact province & city.
                 </p>
             </div>
             <ArticleImage 
@@ -105,17 +114,24 @@ const projectInfo: ProjectInfo[] | [] = [
                 className={""} 
                 alt={"User Address Management"} 
             />
-            <div>
+            {/* <div>
                 <h3 className="std-header">Approach</h3>
                 <p className="std-text">
                 This project was completed in 4 sprints. We utilized Jira as a collaboration platforms to update progress & to put note/feedback if needed. 
                 </p>
                 <h4 className="std-sub-header">Prep Phase</h4>
+            </div> */}
+            <div>
+                <h4 className="std-sub-header">Admin Dashboard Management</h4>
+                <p className="std-text">
+                Warehouse admins are able to manage products, mutate stocks, approve transactions, and monitor sales. Additionally, warehouse admins are not authorized to access warehouses, admins, users information. These access are exclusive to super admin.
+                </p>
             </div>
             <ArticleImage 
                 url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fdashboard-stock.png?alt=media&token=13248da7-de81-4f60-acf4-18e6e67499c6"} 
                 className={""} 
                 alt={"Admin Dashboard (Stock Management)"} 
+                objPosY="29%"
             />
 
             <div>

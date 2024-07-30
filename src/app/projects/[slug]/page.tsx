@@ -26,11 +26,11 @@ export default function Page(params : { params: { slug: string } }) {
             </div>
             <div className="py-8 px-4 flex flex-col items-center gap-6">
                 <div className="max-sm:flex max-sm:items-start gap-2 max-sm:flex-col relative w-full std-article-max-w">
-                    <PrevButton className="rounded-sm max-sm:static max-sm:m-0 absolute top-0 bottom-0 m-auto left-0 bg-transparent text-black/60 border-black/60 hover:text-black hover:border-black border-[1.9px] hover:bg-transparent" text="Projects" />
+                    <PrevButton href="/projects" className="rounded-sm max-sm:static max-sm:m-0 absolute top-0 bottom-0 m-auto left-0 bg-transparent text-black/60 border-black/60 hover:text-black hover:border-black border-[1.9px] hover:bg-transparent" text="Projects" />
                     <h2 className="font-bold text-2xl lg:text-4xl text-center">{ filtered.title }</h2>
                 </div>
                 <Separator className="bg-black/30 std-article-max-w" />
-                <div className="flex  flex-col lg:flex-row justify-center lg:items-start items-center gap-8 lg:gap-4 std-article-max-w w-full">
+                <div className="flex  flex-col lg:flex-row justify-center lg:items-start items-center gap-8 std-article-max-w w-full">
                     {/* navigation */}
                     <div className="flex  flex-col gap-5 lg:gap-10 w-full">
                         <div className="flex lg:flex-col justify-between gap-2">
