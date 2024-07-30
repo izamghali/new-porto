@@ -11,7 +11,7 @@ export default function ProjectBlock() {
         <div className="">
             <div className="mb-10">
                 <h2 className="text-4xl font-bold mb-2">Projects</h2>
-                <p className="text-black/60">Collection of my latest and most notable web development projects.</p>
+                <p className="text-black/60">Collection of my latest and most notable web development projects sorted from the newest - oldest.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full ">
                 {

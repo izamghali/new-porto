@@ -4,7 +4,8 @@ export enum ProjectType {
     "Team Project",
     "Hobby Project",
     "On Progress",
-    "Work-related Project"
+    "Work-related Project",
+    "Assignment Project"
 }
 
 export interface ProjectMember {
