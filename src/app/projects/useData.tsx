@@ -74,11 +74,6 @@ const projectInfo: ProjectInfo[] | [] = [
                 WearDrobe is a Multi-Warehouse E-commerce that utilizes multiple warehouses to improve delivery speed and reduce shipping costs, with orders directed to the nearest warehouse and users seeing a unified stock inventory without knowing the multiple locations.
                 </p>
             </div>
-            <ArticleImage 
-                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fcatalog.png?alt=media&token=875adef3-b9f3-4919-8419-f48f40e7669b"} 
-                className={""} 
-                alt={"WearDrobe Catalog Page"} 
-            />
             <div>
                 <h3 className="std-header">Features</h3>
                 <p className="std-text">
@@ -114,6 +109,31 @@ const projectInfo: ProjectInfo[] | [] = [
                 className={""} 
                 alt={"User Address Management"} 
             />
+            <div>
+                <h4 className="std-sub-header">Catalog & Checkout</h4>
+                <p className="std-text">
+                Users are able browse catalog, like & put items into wishlist, up until checking out items.
+                </p>
+            </div>
+            <ArticleImage 
+                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fcatalog.png?alt=media&token=875adef3-b9f3-4919-8419-f48f40e7669b"} 
+                className={"border-2"} 
+                alt={"Catalog Page"} 
+                objPosY="29%"
+            />
+            <ArticleImage 
+                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fproduct.png?alt=media&token=16a25e61-e61c-4cf1-ba66-666ddfe273ca"} 
+                className={"border-2"} 
+                alt={"Item Page"} 
+            />
+            <div className="flex gap-4">
+            </div>
+            <ArticleImage 
+                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fcheckout.png?alt=media&token=23287961-694d-4bda-8d6b-900c93bf70fd"} 
+                className={"border-2"} 
+                alt={"Checkout Page"} 
+                objPosY="30%"
+            />
             {/* <div>
                 <h3 className="std-header">Approach</h3>
                 <p className="std-text">
@@ -129,7 +149,7 @@ const projectInfo: ProjectInfo[] | [] = [
             </div>
             <ArticleImage 
                 url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/weardrobe%2Fdashboard-stock.png?alt=media&token=13248da7-de81-4f60-acf4-18e6e67499c6"} 
-                className={""} 
+                className={"border-2"} 
                 alt={"Admin Dashboard (Stock Management)"} 
                 objPosY="29%"
             />

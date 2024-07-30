@@ -10,7 +10,7 @@ export default function ArticleImage({ url, className, alt, objPosX, objPosY }: 
             </DialogTrigger>
             <DialogContent className="max-w-[60rem] py-10">
                 <DialogTitle>{ alt }</DialogTitle>
-                <img style={{objectPosition: `50% ${objPosY}`}} className={` h-[32rem] w-full object-cover ${ className }`} src={url} alt={alt} />
+                <img style={{objectPosition: `50% ${objPosY}`}} className={` h-[32rem] w-full object-cover ${ className } border-0 `} src={url} alt={alt} />
             </DialogContent>
         </Dialog>
     )

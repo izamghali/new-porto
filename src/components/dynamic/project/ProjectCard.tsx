@@ -26,7 +26,7 @@ export function ProjectCard({ title, desc, imgUrl, href, tools, tags, year } : P
         <div onClick={() => { setIsLoading(true); router.push(href) } } className="select-none cursor-pointer group rounded-lg relative w-full">
             <Card className={`${ isLoading ? 'blur-[1px]' : 'blur-none' } bg-[#FAF9F6] flex flex-col justify-between rounded-lg border-2 border-black/5 max-lg:shadow-md max-xs:w-72 w-80 lg:w-96 ${ imgUrl ? 'lg:h-[29rem]' : 'lg:max-h-[29rem]' } z-[2] relative lg:group-hover:bg-white lg:group-hover:border-white lg:group-hover:-translate-x-2 lg:group-hover:-translate-y-2 duration-200`}>
                 <CardHeader className=" space-y-4">
-                    { imgUrl && <img style={{objectPosition:"50% 120%"}} className="object-cover h-52 rounded-sm" src={imgUrl} alt="" /> }
+                    { imgUrl && <Image priority width={900} height={300} style={{objectPosition:"50% 120%"}} className="object-cover h-52 rounded-sm" src={imgUrl} alt="" /> }
                     <div className="flex w-full justify-between">
                         <CardTitle className="max-lg:truncate">{ title }</CardTitle>
                         <div className="flex gap-2">
