@@ -99,10 +99,10 @@ export default function DevPortofolios({ className }: { className?: string }) {
                                 <DialogTrigger className="w-full border-[1px] rounded-lg px-2 group hover:bg-black/5 duration-200">
                                     <div key={idx} className="flex items-center justify-between gap-2 py-1 rounded-lg duration-200 cursor-pointer">
                                         <div className="flex items-center gap-2 w-full">
-                                            <Avatar>
+                                            {/* <Avatar>
                                                 <AvatarImage src={item.imgUrl} />
                                                 <AvatarFallback>{ item.fallback }</AvatarFallback>
-                                            </Avatar>
+                                            </Avatar> */}
                                             <div className="text-start">
                                                 <h3>{ item.name }</h3>
                                                 <p className="text-black/55">{ item.title }</p>
@@ -112,9 +112,9 @@ export default function DevPortofolios({ className }: { className?: string }) {
                                 </DialogTrigger>
                                 <DialogContent>
                                     <DialogTitle className="flex gap-2 items-center">
-                                        <div>
+                                        {/* <div>
                                             <Image className="rounded-full" width={60} height={60} src={item.imgUrl} alt={""} />
-                                        </div>
+                                        </div> */}
                                         <div>
                                             { item.name }
                                             <DialogDescription className="font-light">{ item.title }</DialogDescription>

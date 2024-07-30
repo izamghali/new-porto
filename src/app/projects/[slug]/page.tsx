@@ -20,7 +20,7 @@ export default function Page(params : { params: { slug: string } }) {
     )[0]
 
     return (
-        <div className="w-full bg-[#FAF9F6] lg:h-screen h-full">
+        <div className="w-full bg-gradient-to-b from-[#FAF9F6] h-full">
             <div className="w-full flex justify-center bg-white py-4">
                 <Header />
             </div>
@@ -30,9 +30,9 @@ export default function Page(params : { params: { slug: string } }) {
                     <h2 className="font-bold text-2xl lg:text-4xl text-center">{ filtered.title }</h2>
                 </div>
                 <Separator className="bg-black/30 std-article-max-w" />
-                <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center gap-8 lg:gap-0 std-article-max-w w-full">
+                <div className="flex  flex-col lg:flex-row justify-center lg:items-start items-center gap-8 lg:gap-4 std-article-max-w w-full">
                     {/* navigation */}
-                    <div className="flex flex-col gap-5 lg:gap-10 w-full">
+                    <div className="flex  flex-col gap-5 lg:gap-10 w-full">
                         <div className="flex lg:flex-col justify-between gap-2">
                             <div className="space-x-2">
                                 <Badge className="w-fit">{ filtered.type != undefined && ProjectType[filtered.type] }</Badge>
@@ -81,7 +81,7 @@ export default function Page(params : { params: { slug: string } }) {
                     </div>
 
                     {/* content */}
-                    <div className="max-md:max-h-full">
+                    <div className="max-md:max-h-full ">
                         { filtered.content }
                     </div>
                 </div>
