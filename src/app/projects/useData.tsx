@@ -112,7 +112,7 @@ const projectInfo: ProjectInfo[] | [] = [
             <div>
                 <h4 className="std-sub-header">Catalog & Checkout</h4>
                 <p className="std-text">
-                Users are able browse catalog, like & put items into wishlist, up until checking out items.
+                Users are able to browse catalog, like & put items into wishlist, up until checking out items.
                 </p>
             </div>
             <ArticleImage 
@@ -392,7 +392,7 @@ const projectInfo: ProjectInfo[] | [] = [
 
             <ArticleImage 
                 url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/mixin-jam%2Fauth.png?alt=media&token=5fc95834-e2b5-463e-bb92-c0486c4b34a7"} 
-                className={""} 
+                className={"border-2"} 
                 alt={"Login Page of Mixin' Jam"} 
                 objPosY="32%"
             />
