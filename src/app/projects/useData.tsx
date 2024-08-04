@@ -347,11 +347,11 @@ const projectInfo: ProjectInfo[] | [] = [
         links: [
             {
                 name: 'Live Website',
-                link: 'https://samiyastudio.com/'
+                link: 'https://izamghali.github.io/mixin-jam/#/mixin-jam'
             },
             {
                 name: 'GitHub Repository',
-                link: 'https://github.com/izamghali/samiya-website'
+                link: 'https://github.com/izamghali/mixin-jam'
             },
         ],
         tools: [
