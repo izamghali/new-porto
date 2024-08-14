@@ -175,7 +175,7 @@ const projectInfo: ProjectInfo[] | [] = [
             },
             {
                 name: 'Timothy Jason Caviezel',
-                portfolio: 'https://portfolio-taupe-zeta-92.vercel.app/',
+                portfolio: 'https://timothy-jason.vercel.app/',
             },
             {
                 name: 'Mohammad Izam Ghali',

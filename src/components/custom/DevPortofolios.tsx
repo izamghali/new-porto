@@ -23,7 +23,7 @@ export default function DevPortofolios({ className }: { className?: string }) {
             fallback: 'TJ',
             name: 'Timothy Jason Caviezel',
             title: 'Fullstack Developer',
-            href: 'https://portfolio-taupe-zeta-92.vercel.app/',
+            href: 'https://timothy-jason.vercel.app/',
             linkedin: 'https://www.linkedin.com/in/timothy-jason-c-47b43828b/',
             github: 'https://github.com/timothyJasonC',
         },
