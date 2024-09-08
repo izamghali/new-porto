@@ -14,7 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import SearchBar from "./SearchBar"
-import { PiRocket } from "react-icons/pi"
 import useData from "@/app/projects/useData"
 
 export function Header() {

@@ -69,18 +69,7 @@ export default function DevPortofolios({ className }: { className?: string }) {
         <Dialog>
             <DialogTrigger asChild className={`${ className } flex items-center gap-4 py-2 px-2 rounded-lg bg-white/70 hover:bg-white duration-200 max-w-96 cursor-pointer`}>
                 <div className="relative">
-                    <div className="flex -space-x-6 rtl:space-x-reverse">
-                        { portList && 
-                            portList.map((item, idx) => {
-                                if (idx < 3) {
-                                    return <Avatar key={idx}>
-                                        <AvatarImage src={item.imgUrl} />
-                                        <AvatarFallback>{ item.fallback }</AvatarFallback>
-                                    </Avatar>
-                                }
-                        }) }
-                    </div>
-                    <div className="flex items-center gap-2 text-left lg:text-center">
+                    <div className="flex items-center gap-2 text-left lg:text-center px-2">
                         <span>Check out my developer friends&apos; portfolios!</span>
                         <PiArrowSquareOut size={`1.5rem`} />
                     </div>

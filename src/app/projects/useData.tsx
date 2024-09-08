@@ -184,7 +184,7 @@ const projectInfo: ProjectInfo[] | [] = [
         ]
     }, 
     {
-        title: 'Samiya Home Page',
+        title: 'Samiya Gallery',
         desc: 'A Photography Showcase Gallery Page with CRUD functionality for a local photography business service.',
         imgUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/samiya%2Fhomepage.png?alt=media&token=dd4960fd-4e0d-4c31-ae06-746f1afd3866',
         href: '/projects/samiya',
