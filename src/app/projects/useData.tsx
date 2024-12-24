@@ -20,7 +20,8 @@ const projectInfo: ProjectInfo[] | [] = [
         links: [
             {
                 name: 'Live Website',
-                link: 'https://jcwd030801.purwadhikabootcamp.com/'
+                link: 'https://wear-drobe.vercel.app/'
+                // link: 'https://jcwd030801.purwadhikabootcamp.com/'
             },
             {
                 name: 'GitHub Repository',
@@ -191,7 +192,7 @@ const projectInfo: ProjectInfo[] | [] = [
         links: [
             {
                 name: 'Live Website',
-                link: 'https://samiyastudio.com/'
+                link: 'https://samiyastudio.netlify.app/'
             },
             {
                 name: 'Wireframe in Figma',

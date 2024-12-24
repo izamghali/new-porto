@@ -46,7 +46,7 @@ export default function ConnectButtons({ className }: { className?: string }) {
                                 <Link target="_blank" className="flex items-center gap-1 text-black/60 hover:text-black duration-200 " href={'https://github.com/izamghali'}><PiGithubLogo size={`1rem`} />GitHub</Link>
                                 <Link target="_blank" className="flex items-center gap-1 text-black/60 hover:text-black duration-200 " href={'mailto:izamghali18@gmail.com'}><PiEnvelope size={`1rem`} />Email</Link>
                             </div>
-                            <Link className="flex items-center gap-1 " href={'https://drive.usercontent.google.com/u/0/uc?id=10DW-MmZ6-g3y--MiRJtDKlB4OLxBUvOW&export=download'}>
+                            <Link className="flex items-center gap-1 " href={'https://drive.usercontent.google.com/download?id=1bFy_mYGKSRpnGI80Xw6cdcyIvr-_qc0C&export=download&authuser=0&confirm=t&uuid=a81cc9c3-9f3f-4554-b8a4-8cb54c0e8afa&at=APvzH3r-A9s3lfpuUSCagpBK719e:1735005818718'}>
                                 <Button className="px-8 flex items-center gap-2 max-sm:w-full">
                                     <PiDownloadSimple size={`1rem`} />
                                     Download Résumé
