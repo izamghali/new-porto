@@ -23,21 +23,21 @@ export default function ConnectButtons({ className }: { className?: string }) {
                     Connect<PiArrowUpRight className="group-hover:-translate-y-1 group-hover:translate-x-1 duration-200" size={`1.1rem`} />
                 </DialogTrigger>
                 <DialogContent className=" max-w-[40rem]">
-                    <DialogTitle className="flex items-center gap-2">
+                    <DialogTitle className="flex items-center gap-2 mb-4">
                         Connect with me
                         <PiArrowUpRight className="group-hover:-translate-y-1 group-hover:translate-x-1 duration-200" size={`1.1rem`} />
                     </DialogTitle>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2">
+                            {/* <div>
+                                <Image className="rounded-full" width={60} height={60} src={'https://drive.usercontent.google.com/download?id=1YNG-PGtCGFUWPrtYSn-IjMI5ja0Ty1cE&export=download&authuser=0&confirm=t&uuid=e9d50434-e364-4175-8675-559c2daa6bc3&at=AIrpjvOghFo67k8P0NhD7JiFnrom:1739011950094'} alt={"profile-photo"} />
+                            </div> */}
                             <div>
-                                <Image className="rounded-full" width={60} height={60} src={'https://media.licdn.com/dms/image/D5603AQE_GFSXsGZ2uw/profile-displayphoto-shrink_400_400/0/1686749189660?e=1727308800&v=beta&t=X-ZcWdwU-SnBvxagvBQ5JH0O1FU1_aR623y1Nl2toTY'} alt={""} />
-                            </div>
-                            <div>
-                                Izam Ghali
-                                <DialogDescription className="font-light">Junior Fullstack Web Developer</DialogDescription>
+                                <p className="text-black font-medium">Izam Ghali</p>
+                                <DialogDescription className="font-light text-muted-foreground">Junior Fullstack Web Developer</DialogDescription>
                             </div>
                         </div>
-                        <span className="text-black/60">
+                        <span className="text-muted-foreground">
                             Career switcher aspiring to be a Pi-shaped developer, open to work and collaboration. Process-oriented and committed to continuous learning to stay relevant in tech. Excited for what&apos;s ahead!
                         </span>
                         <div className="flex justify-between max-sm:flex-col-reverse max-sm:gap-2">

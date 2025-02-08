@@ -1,17 +1,107 @@
-import { ToolTip } from "@/components/dynamic/ToolTip"
 import { ProjectInfo } from "@/lib/constant"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 import React from "react"
 import { FaBootstrap, FaReact, FaSass } from "react-icons/fa"
 import { IoLogoFirebase } from "react-icons/io5"
 import { PiFigmaLogo, PiMapPin, PiSpotifyLogo } from "react-icons/pi"
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"
-import { SiShadcnui, SiGreensock, SiExcalidraw, SiRedux } from "react-icons/si"
+import { SiShadcnui, SiGreensock, SiExcalidraw, SiNestjs, SiNextdotjs, SiOpenai, SiChartdotjs } from "react-icons/si"
 import { ProjectType } from "@/lib/constant"
 import ArticleImage from "./_components/ArticleImage"
 
 const projectInfo: ProjectInfo[] | [] = [
+    {
+        title: 'InsightFlo',
+        desc: 'InsightFlo is an AI-enhanced business intelligence dashboard that provides real-time insights, data visualization, and task automation.',
+        imgUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/insight-flo%2Fluke-chesser-JKUTrJ4vK00-unsplash.jpg?alt=media&token=a1ae2b55-01c8-4a86-804e-46d533fac5f5',
+        href: '/projects/insight-flo',
+        links: [
+            // {
+            //     name: 'Live Website',
+            //     link: 'https://samiyastudio.netlify.app/'
+            // },
+            // {
+            //     name: 'Wireframe in Figma',
+            //     link: 'https://www.figma.com/proto/wrJu7cv0FUTuUS9M3C33ey/samiya-wireframe?page-id=0%3A1&type=design&node-id=34-100&viewport=294%2C268%2C0.27&t=26KEpD4GwZpEWWug-1&scaling=min-zoom&mode=design'
+            // },
+            // {
+            //     name: 'GitHub Repository',
+            //     link: 'https://github.com/izamghali/samiya-website'
+            // },
+        ],
+        tools: [
+            {
+                name: 'OpenAI API',
+                href: 'https://platform.openai.com/docs/overview',
+                logo: <SiOpenai size={`1.2rem`} />,
+            },
+            {
+                name: 'Next JS',
+                href: 'https://nextjs.org/',
+                logo: <SiNextdotjs size={`1.2rem`} />,
+            },
+            // {
+            //     name: 'Firebase',
+            //     href: 'https://firebase.google.com/',
+            //     logo: <IoLogoFirebase size={`1.2rem`} />,
+            // },
+            {
+                name: 'Nest JS',
+                href: 'https://nestjs.com/',
+                logo: <SiNestjs size={`1.2rem`} />,
+            },
+            {
+                name: 'Chart JS',
+                href: 'https://www.chartjs.org/',
+                logo: <SiChartdotjs size={`1.2rem`} />,
+            },
+            // {
+            //     name: 'Tailwind CSS',
+            //     href: 'https://tailwindcss.com/',
+            //     logo: <RiTailwindCssFill size={`1.2rem`} />,
+            // },
+            // {
+            //     name: 'Figma',
+            //     href: 'https://www.figma.com/',
+            //     logo: <PiFigmaLogo size={`1.2rem`} />,
+            // },
+        ]
+        ,
+        tags: <div><Badge className="bg-orange-400">On Going</Badge></div>,
+        content: 
+        <div className="flex flex-col gap-4">
+            <ArticleImage 
+                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/insight-flo%2Fluke-chesser-JKUTrJ4vK00-unsplash.jpg?alt=media&token=a1ae2b55-01c8-4a86-804e-46d533fac5f5"} 
+                className={""} 
+                alt={"Illustration of InsightFlo"} 
+                objPosY="75%"
+            />
+        
+            <div>
+                <h3 className="std-header">Project Overview</h3>
+                <p className="std-text">InsightFlo is an AI-enhanced business intelligence dashboard that provides real-time insights, data visualization, and task automation. Designed for business owners and managers, it streamlines decision-making by leveraging AI-driven analytics and automation.</p>
+            </div>
+            <p className="std-text">The first version of InsightFlo is still in brainstorming & planning phase. It will all be built using JavaScript modern tech stacks such Next 14 or 15 (in consideration), Nest, and of course, the &quot;bread and butter&quot;, OpenAI API.</p>
+            <p className="std-text">This project is intended to showcase my skills in regards on how AI can be integrated in business dashboard intelligence. All the updates will be reported here.</p>
+            {/* <div>
+                <h3 className="std-header">Features</h3>
+                <p className="std-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officiis facere illo possimus harum enim, facilis vitae nostrum mollitia fugit. Possimus reiciendis illum odit qui magnam dolores odio, repellat nobis?</p>
+            </div> */}
+            {/* <div>
+                <h3 className="std-header">Responsibilities</h3>
+                <ul className="std-text space-y-2">
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Wireframe Design</span>:  Created initial website layouts using Figma for a cohesive design vision.</li>
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Responsive Development</span>: Ensured optimal user experience across various screen sizes and devices.</li>
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Interactive Features</span>: Implemented interactive elements such as carousels and animations using Tailwind CSS, daisyUI, and GSAP.</li>
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Dynamic Functionality</span>: Developed a category-based gallery filter and carousel logic with React hooks.</li>
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Dashboard Development</span>: Designed a CRUD photo gallery dashboard and login system using Firebase.</li>
+                    <li className="ml-5 list-disc hover:text-black duration-200 select-none"><span className="font-bold">Firebase Integration & Deployment</span>: Integrated Firebase Storage and Firestore Database for efficient content management and deployed the website with a custom domain on Netlify.</li>
+                </ul>
+            </div> */}
+        </div>,
+        type: ProjectType["Hobby Project"],
+        year: 2025,
+    }, 
     {
         title: 'WearDrobe',
         desc: 'A multi-warehouse e-commerce web app that boosts delivery speed and cuts costs.',
@@ -61,7 +151,7 @@ const projectInfo: ProjectInfo[] | [] = [
             },
         ]
         ,
-        tags: <div><Badge className="bg-red-400">Hot</Badge></div>,
+        // tags: <div><Badge className="bg-red-400">Hot</Badge></div>,
         content: 
         <div className="flex flex-col gap-4">
             <ArticleImage 
@@ -210,6 +300,11 @@ const projectInfo: ProjectInfo[] | [] = [
                 logo: <IoLogoFirebase size={`1.2rem`} />,
             },
             {
+                name: 'React',
+                href: 'https://react.dev/',
+                logo: <FaReact size={`1.2rem`} />,
+            },
+            {
                 name: 'Tailwind CSS',
                 href: 'https://tailwindcss.com/',
                 logo: <RiTailwindCssFill size={`1.2rem`} />,
@@ -229,7 +324,6 @@ const projectInfo: ProjectInfo[] | [] = [
         // tags: <div><Badge className="bg-red-400">Hot</Badge></div>,
         content: 
         <div className="flex flex-col gap-4">
-
             <ArticleImage 
                 url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/samiya%2Fhomepage.png?alt=media&token=dd4960fd-4e0d-4c31-ae06-746f1afd3866"} 
                 className={""} 
@@ -272,76 +366,76 @@ const projectInfo: ProjectInfo[] | [] = [
         type: ProjectType["Work-related Project"],
         year: 2023,
     }, 
-    {
-        title: 'Redux Flashcard',
-        desc: 'A learning platform to help users efficiently study, retain information, refresh memory, and learn new languages.',
-        imgUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/flashcard%2Fflashcard.png?alt=media&token=2f6132bd-0967-4a5a-b5bc-08993e8af3e5',
-        href: '/projects/flashcard',
-        links: [
-            {
-                name: 'Live Website',
-                link: 'https://redux-flashcard.vercel.app/'
-            },
-            {
-                name: 'GitHub Repository',
-                link: 'https://github.com/izamghali/redux-flashcard'
-            },
-        ],
-        tools: [
-            {
-                name: 'Redux',
-                href: 'https://redux.js.org/',
-                logo: <SiRedux size={`1.2rem`} />,
-            },
-            {
-                name: 'Firebase',
-                href: 'https://firebase.google.com/',
-                logo: <IoLogoFirebase size={`1.2rem`} />,
-            },
-            {
-                name: 'Next.js',
-                href: 'https://nextjs.org/',
-                logo: <RiNextjsFill size={`1.2rem`} />,
-            },
-            {
-                name: 'Tailwind CSS',
-                href: 'https://tailwindcss.com/',
-                logo: <RiTailwindCssFill size={`1.2rem`} />,
-            },
-            {
-                name: 'Shadcn UI',
-                href: 'https://ui.shadcn.com/',
-                logo: <SiShadcnui size={`1.2rem`} />,
-            },
-        ],
-        tags: <div><Badge className="bg-orange-400">On Going</Badge></div>,
-        content: 
-        <div className="flex flex-col gap-4">
-            <div>
-                <h3 className="std-header">Project Overview</h3>
-                <p className="std-text">
-                Redux Flashcard is a learning app platform to help users efficiently study, retain information, refresh memory, and learn new languages. The app allows users to create, organize, review flashcards accross various subjects.
-                </p>
-            </div>
-            <ArticleImage 
-                url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/flashcard%2Fflashcard.png?alt=media&token=2f6132bd-0967-4a5a-b5bc-08993e8af3e5"} 
-                className={""} 
-                alt={"Flashcard Web App Homepage"} 
-            />
-            <div>
-                <h3 className="std-header">Progress Update</h3>
-                <p className="std-text">Most of the UI components have been built using shadcn UI and several custom components. We are currently building its CRUD functions and utilities, along side with installing Redux and Firebase. However, there has been thoughts about transferring/re-building this project using React Native, so it is friendlier to mobile users.
-                </p>
-                <p className="std-text">The idea is not only to build the app to the most beneficial users, but also in what context the app is used the most by the users. Unlike using it in desktop, we believe using the app &quot;on the go&quot; would be the most optimum for the users, so they can learn through their cards anywhere they go. However, we&apos;re still aiming to make the app accessible on larger screens.</p>
-                {/* <h4 className="std-sub-header">Authentication & Authorization</h4>
-                <p className="std-text">
-                Users are able to register & login using their emails or login using their Google account. Users are also able to make forgot-password request to reset their password. Warehouse admins are registered by Super admin and will be invited via email to setup their new warehouse admin account.
-                </p> */}
-            </div>
-        </div>,
-        type: ProjectType["On Progress"],
-        year: 2024,
-    }, 
+    // {
+    //     title: 'Redux Flashcard',
+    //     desc: 'A learning platform to help users efficiently study, retain information, refresh memory, and learn new languages.',
+    //     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/flashcard%2Fflashcard.png?alt=media&token=2f6132bd-0967-4a5a-b5bc-08993e8af3e5',
+    //     href: '/projects/flashcard',
+    //     links: [
+    //         {
+    //             name: 'Live Website',
+    //             link: 'https://redux-flashcard.vercel.app/'
+    //         },
+    //         {
+    //             name: 'GitHub Repository',
+    //             link: 'https://github.com/izamghali/redux-flashcard'
+    //         },
+    //     ],
+    //     tools: [
+    //         {
+    //             name: 'Redux',
+    //             href: 'https://redux.js.org/',
+    //             logo: <SiRedux size={`1.2rem`} />,
+    //         },
+    //         {
+    //             name: 'Firebase',
+    //             href: 'https://firebase.google.com/',
+    //             logo: <IoLogoFirebase size={`1.2rem`} />,
+    //         },
+    //         {
+    //             name: 'Next.js',
+    //             href: 'https://nextjs.org/',
+    //             logo: <RiNextjsFill size={`1.2rem`} />,
+    //         },
+    //         {
+    //             name: 'Tailwind CSS',
+    //             href: 'https://tailwindcss.com/',
+    //             logo: <RiTailwindCssFill size={`1.2rem`} />,
+    //         },
+    //         {
+    //             name: 'Shadcn UI',
+    //             href: 'https://ui.shadcn.com/',
+    //             logo: <SiShadcnui size={`1.2rem`} />,
+    //         },
+    //     ],
+    //     tags: <div><Badge className="bg-orange-400">On Going</Badge></div>,
+    //     content: 
+    //     <div className="flex flex-col gap-4">
+    //         <div>
+    //             <h3 className="std-header">Project Overview</h3>
+    //             <p className="std-text">
+    //             Redux Flashcard is a learning app platform to help users efficiently study, retain information, refresh memory, and learn new languages. The app allows users to create, organize, review flashcards accross various subjects.
+    //             </p>
+    //         </div>
+    //         <ArticleImage 
+    //             url={"https://firebasestorage.googleapis.com/v0/b/portfolio-ae8ea.appspot.com/o/flashcard%2Fflashcard.png?alt=media&token=2f6132bd-0967-4a5a-b5bc-08993e8af3e5"} 
+    //             className={""} 
+    //             alt={"Flashcard Web App Homepage"} 
+    //         />
+    //         <div>
+    //             <h3 className="std-header">Progress Update</h3>
+    //             <p className="std-text">Most of the UI components have been built using shadcn UI and several custom components. We are currently building its CRUD functions and utilities, along side with installing Redux and Firebase. However, there has been thoughts about transferring/re-building this project using React Native, so it is friendlier to mobile users.
+    //             </p>
+    //             <p className="std-text">The idea is not only to build the app to the most beneficial users, but also in what context the app is used the most by the users. Unlike using it in desktop, we believe using the app &quot;on the go&quot; would be the most optimum for the users, so they can learn through their cards anywhere they go. However, we&apos;re still aiming to make the app accessible on larger screens.</p>
+    //             {/* <h4 className="std-sub-header">Authentication & Authorization</h4>
+    //             <p className="std-text">
+    //             Users are able to register & login using their emails or login using their Google account. Users are also able to make forgot-password request to reset their password. Warehouse admins are registered by Super admin and will be invited via email to setup their new warehouse admin account.
+    //             </p> */}
+    //         </div>
+    //     </div>,
+    //     type: ProjectType["On Progress"],
+    //     year: 2024,
+    // }, 
     {
         title: 'JS Do-Nuts',
         desc: 'JS Do-Nuts is a responsive landing page for a fictional donut store built using Next.js.',
@@ -525,7 +619,7 @@ const projectInfo: ProjectInfo[] | [] = [
             // },
         ]
         ,
-        tags: <div><Badge className="bg-orange-400">On Going</Badge></div>,
+        tags: <div><Badge className="bg-white border border-muted-foreground text-muted-foreground hover:text-white">On Hold</Badge></div>,
         content: 
         <div className="flex flex-col gap-4">
             <div>
